@@ -1,0 +1,35 @@
+# CREAR ENTORNO
+python -m venv BB_env 
+
+# ACTIVAR ENTORNO
+.\BB_env\Scripts\activate
+
+# DESACTIVAR ENTORNO
+deactivate
+
+# INSTALAR LIBRERIAS DENTRO DEL ENTORNO VIRTUAL UNO POR UNO 
+python.exe -m pip install --upgrade pip
+pip install pandas
+pip install scikit-learn
+pip install seaborn
+pip install matplotlib
+
+# CONOCER QUE LIBRERIAS SE TIENEN INSTALADAS
+pip list
+
+## CREAR ARCHIVO DE REQUERIMIENTOS DEL PROYECTO
+pip freeze > requirements.txt
+
+# INSTALAR LIBRERIAS DENTRO DEL ENTORNO VIRTUAL DESDE ARCHIVO DE REQUERIMIENTO
+Si el proyecto es compartido y se desea instalar las librerias necesarias para el proyecto, 
+este ya deberia contar con el archivo ""requirements.txt"" el cual es un estandar.
+pip install -r ".\requirements.txt"
+
+# DESINSTALAR LIBRERIAS DENTRO DEL ENTORNO VIRTUAL
+Con el entorno virtual activado usamos el comando 
+    ""pip uninstall -r requirements.txt -y""
+
+************************************************************************************************
+
+# PUBLICAR PROYECTO A GITHUB
+Shift + Ctrl + P ----->  Publish to GitHub
